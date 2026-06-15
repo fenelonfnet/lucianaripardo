@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    
+    <!-- SEO Meta Tags -->
+    <title>Profa. Luciana Ripardo Alves | Aulas de Língua Portuguesa</title>
+    <meta name="description" content="Aulas particulares de Língua Portuguesa com a Profa. Luciana Ripardo Alves. Reforço escolar, redação, preparação para o ENEM e atendimento personalizado e inclusivo. Presencial em Parnaíba (PI) e online para todo o Brasil."/>
+    <meta name="keywords" content="Professora de Português, Aula particular de português, ENEM, Parnaíba, Redação, Reforço escolar, Luciana Ripardo Alves"/>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Profa. Luciana Ripardo Alves | Aulas de Língua Portuguesa"/>
+    <meta property="og:description" content="Aulas particulares de Língua Portuguesa com método personalizado, do reforço escolar ao ENEM — para quem quer entender de verdade."/>
+    <meta property="og:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuCV5764TYE-r5iScvl9rOVfxJQ_q0c86JXCRDx7DQlBCrm9smqsb7PV7uaE6oh9uEGQdGsuGHFCEvCXVAbqQTZQ4h8gPbrXLYWLSZ-bDdkQfUup7BZjCvgcVnDFcKBGBhK56P6f_KCEHpHa1-514mg2Ppen_cfnDQxIzHjUiWn2GdeaE87sVe18qYR1XXtrehUSCEs-NKHQbqV09jgQp1_YhVGFEkL-gqZK1bITgAN1_UpB0Pr2-zadb16L-Z13LYq9CRtxUVvDa0W-"/>
+
+    <!-- Tailwind CSS with CDN and configuration -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#f9f9ff",
+                        "background": "#f9f9ff",
+                        "surface-container-highest": "#d5e3ff",
+                        "outline-variant": "#bdc9ca",
+                        "surface-dim": "#c8dbff",
+                        "secondary-fixed-dim": "#ffb3b1",
+                        "primary-fixed": "#8cf2fd",
+                        "surface-container-low": "#f0f3ff",
+                        "on-secondary-fixed-variant": "#92001c",
+                        "tertiary": "#565e55",
+                        "inverse-surface": "#183153",
+                        "on-tertiary-fixed": "#161d16",
+                        "secondary": "#b7102a",
+                        "on-tertiary-fixed-variant": "#404940",
+                        "primary-fixed-dim": "#6fd6e0",
+                        "secondary-fixed": "#ffdad8",
+                        "surface": "#f9f9ff",
+                        "on-primary-fixed": "#002022",
+                        "tertiary-fixed-dim": "#c0c9be",
+                        "surface-container-high": "#dee8ff",
+                        "surface-tint": "#006971",
+                        "on-surface": "#001b3c",
+                        "on-secondary-fixed": "#410007",
+                        "primary-container": "#00818a",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "outline": "#6d797a",
+                        "surface-container": "#e7eeff",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#ecf1ff",
+                        "inverse-primary": "#6fd6e0",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#db313f",
+                        "on-background": "#001b3c",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#fffbff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#f6fff3",
+                        "on-surface-variant": "#3d494a",
+                        "on-primary-container": "#f5feff",
+                        "primary": "#00666e",
+                        "surface-variant": "#d5e3ff",
+                        "on-primary-fixed-variant": "#004f55",
+                        "tertiary-fixed": "#dce5d9",
+                        "tertiary-container": "#6e776d",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "12px",
+                        "xl": "80px",
+                        "lg": "48px",
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "xs": "4px",
+                        "base": "8px",
+                        "md": "24px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "display-lg-mobile": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "caption": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+    
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Premium Scroll Reveal Styling */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Micro-interactions */
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        
+        .image-zoom {
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .image-zoom:hover {
+            transform: scale(1.04);
+        }
+
+        /* Float animation for the main CTA */
+        @keyframes float {
+            0%, 100% { transform: translateY(0) scale(1.02); }
+            50% { transform: translateY(-4px) scale(1.02); }
+        }
+        .cta-float {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden antialiased">
+
+<!-- Header Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-sm border-b border-outline-variant transition-all duration-300">
+    <div class="max-w-container-max mx-auto px-md py-sm flex justify-between items-center h-16">
+        <div class="flex items-center gap-2">
+            <img alt="Logo Luciana Alves" class="h-10 w-auto rounded-full object-cover shadow-sm border border-primary/20" src="https://lh3.googleusercontent.com/aida/AP1WRLvTBpa3w8oTgfxsgsFpZEqzN8yghcbnPzScrIy6zs44lEwgBrmB7BSLX19KcZOm1OIvwJQavdhqbU2r3wNrk9XjB7_eBiXnvD93_f5t1dOOBlcKlk8QVSUfDuTRLH0SZAyHxIyaJrutCHG6Spp5NsgHylJyuV9I57aCMxwwBVlhOm-g9lf2UW0-aulpbvwhm_LO3sH-Adtmomo0zlbqczhzHiKq_VI0ijXJgEs94VF2Yx48ET_p2ovvnNlO"/>
+            <span class="font-headline-sm text-headline-sm text-primary hidden md:block">Luciana Alves</span>
+        </div>
+        
+        <!-- Desktop Nav Menu -->
+        <div class="hidden md:flex gap-md items-center">
+            <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-2" href="#apresentacao">Início</a>
+            <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-2" href="#para-quem">Metodologia</a>
+            <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-2" href="#oferta">Aulas</a>
+            <a id="desktop-cta-btn" class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md text-label-md hover:brightness-110 active:scale-95 transition-all shadow-sm" href="https://wa.me/5586995390749" target="_blank">Agendar Aula</a>
+        </div>
+        
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="menu-toggle-btn" class="md:hidden text-primary p-2 hover:bg-primary/10 rounded-full transition-colors" aria-label="Abrir Menu">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+    </div>
+</nav>
+
+<!-- Mobile Navigation Drawer -->
+<div id="mobile-menu-drawer" class="fixed inset-0 z-[100] transform translate-x-full transition-transform duration-300 ease-in-out md:hidden" aria-hidden="true">
+    <!-- Backdrop Overlay -->
+    <div id="menu-backdrop" class="absolute inset-0 bg-inverse-surface/30 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
+    
+    <!-- Drawer Content -->
+    <div class="absolute right-0 top-0 h-full w-4/5 max-w-sm bg-surface shadow-2xl p-md flex flex-col border-l border-outline-variant z-10">
+        <div class="flex justify-between items-center mb-lg pb-sm border-b border-outline-variant/30">
+            <span class="font-headline-sm text-headline-sm text-primary">Menu</span>
+            <button id="menu-close-btn" class="text-on-surface-variant hover:text-primary p-2 hover:bg-primary/10 rounded-full transition-colors" aria-label="Fechar Menu">
+                <span class="material-symbols-outlined text-3xl">close</span>
+            </button>
+        </div>
+        
+        <div class="flex flex-col gap-md">
+            <a class="mobile-nav-link font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-3 px-2 rounded-lg hover:bg-primary/5" href="#apresentacao">Início</a>
+            <a class="mobile-nav-link font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-3 px-2 rounded-lg hover:bg-primary/5" href="#para-quem">Metodologia</a>
+            <a class="mobile-nav-link font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-3 px-2 rounded-lg hover:bg-primary/5" href="#oferta">Aulas</a>
+            
+            <a id="mobile-cta-btn" class="bg-primary text-on-primary text-center px-6 py-3.5 rounded-full font-label-md text-label-md hover:brightness-110 active:scale-95 transition-all shadow-md mt-lg" href="https://wa.me/5586995390749" target="_blank">
+                Agendar Aula
+            </a>
+        </div>
+    </div>
+</div>
+
+<main>
+    <!-- Hero Section -->
+    <section class="pt-32 pb-xl px-md bg-surface-bright relative overflow-hidden">
+        <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-lg items-center relative z-10">
+            <div class="space-y-md scroll-reveal" style="transition-delay: 100ms;">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-primary/10 rounded-full border border-primary/20">
+                    <span class="material-symbols-outlined text-primary text-lg">school</span>
+                    <p class="font-label-md text-label-md text-primary">Aulas de Língua Portuguesa — Presencial e Online</p>
+                </div>
+                <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface leading-tight">
+                    Você não odeia Português. Você ainda não encontrou <span class="text-primary">quem soubesse te explicar.</span>
+                </h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    Aulas particulares com método personalizado, do reforço escolar ao ENEM — para quem quer entender de verdade, não só decorar regra.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a id="hero-cta-btn" class="inline-flex items-center justify-center gap-2 bg-secondary text-on-secondary px-8 py-4 rounded-xl font-label-md text-label-md hover-lift cta-float shadow-lg group" href="https://wa.me/5586995390749" target="_blank">
+                        👉 Falar com a Professora no WhatsApp
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="relative scroll-reveal" style="transition-delay: 200ms;">
+                <!-- Main Image wrapper -->
+                <div class="aspect-video md:aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                    <img alt="Screenshot de uma aula online via Google Meet com a Professora Luciana" class="w-full h-full object-cover image-zoom" fetchpriority="high" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQY0I-NsH_guN1Crhb0P-xg3GsIWzidBtHEifpZLLOPsiUZ76p6w84Ac4vcja4Ndkw8nQfjx8vfEORknaPtdapXh62UbwXXV7RAYLZ7T78o1ew3tAyRYGBurtJ0IX4VgCI9YctQuwvjbqYjyFvS30dh5hPkdqWnv-NPvkV-lzt9oAMPxOXTDOznPdUoVSltymrD7Se2Zceq33KKpCDK0ktgzB_SweNZKNQCReqdAxTB08NubYU1CSP013t1WStgth_1bDWFQcxjOa-"/>
+                </div>
+                
+                <!-- Online tag overlay -->
+                <div class="absolute -bottom-6 -left-6 bg-surface p-4 rounded-2xl shadow-xl border border-outline-variant hidden md:flex items-center gap-4 hover-lift">
+                    <div class="bg-primary/20 p-3 rounded-xl">
+                        <span class="material-symbols-outlined text-primary">videocam</span>
+                    </div>
+                    <div>
+                        <p class="font-label-md text-label-md text-on-surface">Aulas Online</p>
+                        <p class="text-caption font-caption text-on-surface-variant">Via Google Meet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Subtle Background Decoration -->
+        <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+    </section>
+
+    <!-- Apresentação Section -->
+    <section class="py-xl px-md bg-white border-b border-surface-container-high" id="apresentacao">
+        <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-5 gap-xl items-center">
+            <div class="md:col-span-2 scroll-reveal">
+                <div class="relative max-w-sm mx-auto md:max-w-none">
+                    <div class="aspect-square rounded-full border-[12px] border-surface-container overflow-hidden shadow-lg">
+                        <img alt="Foto da Professora Luciana" class="w-full h-full object-cover image-zoom" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV5764TYE-r5iScvl9rOVfxJQ_q0c86JXCRDx7DQlBCrm9smqsb7PV7uaE6oh9uEGQdGsuGHFCEvCXVAbqQTZQ4h8gPbrXLYWLSZ-bDdkQfUup7BZjCvgcVnDFcKBGBhK56P6f_KCEHpHa1-514mg2Ppen_cfnDQxIzHjUiWn2GdeaE87sVe18qYR1XXtrehUSCEs-NKHQbqV09jgQp1_YhVGFEkL-gqZK1bITgAN1_UpB0Pr2-zadb16L-Z13LYq9CRtxUVvDa0W-"/>
+                    </div>
+                    <div class="absolute -top-4 -right-4 bg-secondary p-4 rounded-full text-on-secondary shadow-lg hover:rotate-12 transition-transform">
+                        <span class="material-symbols-outlined">verified_user</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:col-span-3 space-y-md scroll-reveal" style="transition-delay: 150ms;">
+                <h2 class="font-headline-md text-headline-md text-primary">Olá, eu sou a Luciana.</h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    Sou professora de Língua Portuguesa formada em Licenciatura Plena, com formação em Docência do Ensino Superior, Educação Inclusiva com habilitação em Libras, e especialização em andamento em Psicopedagogia Clínica e Institucional.
+                </p>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                    Atendo estudantes do 6º ano do Ensino Fundamental até a 3ª série do Ensino Médio — tanto de forma presencial em Parnaíba (PI) quanto online pelo Google Meet. Acredito que aprender Português não é questão de talento. É questão de método, de paciência e de alguém que enxerga como você aprende. É isso que eu faço.
+                </p>
+                <div class="grid grid-cols-2 gap-md pt-4">
+                    <div class="p-4 bg-surface-container rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors">
+                        <p class="text-primary font-headline-sm text-headline-sm">100%</p>
+                        <p class="text-caption font-caption text-on-surface-variant">Personalizado</p>
+                    </div>
+                    <div class="p-4 bg-surface-container rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors">
+                        <p class="text-primary font-headline-sm text-headline-sm">+Inclusão</p>
+                        <p class="text-caption font-caption text-on-surface-variant">Ensino Acolhedor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Para Quem É Section (Bento-like Cards) -->
+    <section class="py-xl px-md bg-surface-container-low" id="para-quem">
+        <div class="max-w-container-max mx-auto">
+            <div class="text-center mb-xl scroll-reveal">
+                <h2 class="font-headline-md text-headline-md text-on-surface">Esse acompanhamento é pra você se…</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+                <div class="p-md bg-white rounded-2xl border border-outline-variant hover:border-primary transition-all group shadow-sm hover-lift scroll-reveal" style="transition-delay: 50ms;">
+                    <span class="material-symbols-outlined text-secondary text-3xl mb-4 group-hover:scale-110 transition-transform inline-block">menu_book</span>
+                    <p class="font-body-lg text-body-lg text-on-surface group-hover:text-primary transition-colors">Você (ou seu filho) tem dificuldade em leitura e interpretação de texto</p>
+                </div>
+                
+                <div class="p-md bg-white rounded-2xl border border-outline-variant hover:border-primary transition-all group shadow-sm hover-lift scroll-reveal" style="transition-delay: 100ms;">
+                    <span class="material-symbols-outlined text-secondary text-3xl mb-4 group-hover:scale-110 transition-transform inline-block">trending_down</span>
+                    <p class="font-body-lg text-body-lg text-on-surface group-hover:text-primary transition-colors">As notas em Português não refletem o esforço que existe</p>
+                </div>
+                
+                <div class="p-md bg-white rounded-2xl border border-outline-variant hover:border-primary transition-all group shadow-sm hover-lift scroll-reveal" style="transition-delay: 150ms;">
+                    <span class="material-symbols-outlined text-secondary text-3xl mb-4 group-hover:scale-110 transition-transform inline-block">alarm</span>
+                    <p class="font-body-lg text-body-lg text-on-surface group-hover:text-primary transition-colors">A prova do ENEM ou do vestibular está chegando e a insegurança também</p>
+                </div>
+                
+                <div class="p-md bg-white rounded-2xl border border-outline-variant hover:border-primary transition-all group shadow-sm hover-lift scroll-reveal" style="transition-delay: 200ms;">
+                    <span class="material-symbols-outlined text-secondary text-3xl mb-4 group-hover:scale-110 transition-transform inline-block">cloud_off</span>
+                    <p class="font-body-lg text-body-lg text-on-surface group-hover:text-primary transition-colors">O conteúdo da sala de aula não ficou claro e ficou pra trás</p>
+                </div>
+                
+                <div class="p-md bg-white rounded-2xl border border-outline-variant hover:border-primary transition-all group shadow-sm hover-lift scroll-reveal" style="transition-delay: 250ms;">
+                    <span class="material-symbols-outlined text-secondary text-3xl mb-4 group-hover:scale-110 transition-transform inline-block">diversity_3</span>
+                    <p class="font-body-lg text-body-lg text-on-surface group-hover:text-primary transition-colors">Você aprende de um jeito diferente e precisa de alguém que respeite isso</p>
+                </div>
+                
+                <div class="p-md bg-white rounded-2xl border border-outline-variant hover:border-primary transition-all group shadow-sm hover-lift scroll-reveal" style="transition-delay: 300ms;">
+                    <span class="material-symbols-outlined text-secondary text-3xl mb-4 group-hover:scale-110 transition-transform inline-block">emoji_objects</span>
+                    <p class="font-body-lg text-body-lg text-on-surface group-hover:text-primary transition-colors">Você quer entender Português — não só passar de ano</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O Que Eu Ofereço (Visual Cards) -->
+    <section class="py-xl px-md bg-white overflow-hidden" id="oferta">
+        <div class="max-w-container-max mx-auto">
+            <h2 class="font-headline-md text-headline-md text-on-surface text-center mb-xl scroll-reveal">O que você encontra nas aulas</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-md">
+                <div class="group bg-surface rounded-2xl p-md border border-outline-variant hover:shadow-xl hover-lift transition-all scroll-reveal" style="transition-delay: 50ms;">
+                    <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-white transition-colors">auto_stories</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs">Leitura e interpretação textual</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Desenvolva a habilidade mais cobrada em provas — e a mais útil na vida.</p>
+                </div>
+                
+                <div class="group bg-surface rounded-2xl p-md border border-outline-variant hover:shadow-xl hover-lift transition-all scroll-reveal" style="transition-delay: 100ms;">
+                    <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-white transition-colors">edit_note</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs">Gramática que faz sentido</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Sem decoreba. Com contexto, exemplos reais e aplicação prática.</p>
+                </div>
+                
+                <div class="group bg-surface rounded-2xl p-md border border-outline-variant hover:shadow-xl hover-lift transition-all scroll-reveal" style="transition-delay: 150ms;">
+                    <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-white transition-colors">history_edu</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs">Produção textual</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Da estrutura ao argumento: redação para escola, ENEM e vestibular.</p>
+                </div>
+                
+                <div class="group bg-surface rounded-2xl p-md border border-outline-variant hover:shadow-xl hover-lift transition-all scroll-reveal" style="transition-delay: 200ms;">
+                    <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-white transition-colors">target</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs">Preparação para ENEM e vestibulares</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Foco nas competências avaliadas, com estratégia e treino dirigido.</p>
+                </div>
+                
+                <div class="group bg-surface rounded-2xl p-md border border-outline-variant hover:shadow-xl hover-lift transition-all scroll-reveal" style="transition-delay: 250ms;">
+                    <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-white transition-colors">local_library</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs">Reforço escolar</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Acompanhamento do conteúdo da escola, no ritmo do aluno.</p>
+                </div>
+                
+                <div class="group bg-surface rounded-2xl p-md border border-outline-variant hover:shadow-xl hover-lift transition-all scroll-reveal" style="transition-delay: 300ms;">
+                    <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-md group-hover:bg-primary transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-white transition-colors">accessible</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs">Atendimento inclusivo</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Formação em Educação Inclusiva e Libras para atender com acolhimento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais Section (Layered Blocks) -->
+    <section class="py-xl px-md bg-primary text-on-primary">
+        <div class="max-w-container-max mx-auto">
+            <h2 class="font-headline-md text-headline-md text-center mb-xl scroll-reveal">Por que as aulas com a Luciana funcionam</h2>
+            
+            <div class="space-y-md">
+                <div class="flex flex-col md:flex-row items-center gap-lg bg-on-primary/5 p-lg rounded-3xl border border-on-primary/10 hover:bg-on-primary/10 transition-colors scroll-reveal">
+                    <div class="flex-shrink-0 w-20 h-20 bg-primary-container rounded-2xl flex items-center justify-center shadow-md">
+                        <span class="material-symbols-outlined text-4xl">psychology</span>
+                    </div>
+                    <div>
+                        <h4 class="font-headline-sm text-headline-sm mb-2">Método que se adapta a você</h4>
+                        <p class="font-body-lg text-body-lg text-on-primary/80">Cada aluno aprende de um jeito. As aulas são planejadas de acordo com as necessidades e o ritmo de quem está aprendendo.</p>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row items-center gap-lg bg-on-primary/5 p-lg rounded-3xl border border-on-primary/10 hover:bg-on-primary/10 transition-colors scroll-reveal">
+                    <div class="flex-shrink-0 w-20 h-20 bg-primary-container rounded-2xl flex items-center justify-center shadow-md">
+                        <span class="material-symbols-outlined text-4xl">lightbulb</span>
+                    </div>
+                    <div>
+                        <h4 class="font-headline-sm text-headline-sm mb-2">Foco em compreensão, não em memorização</h4>
+                        <p class="font-body-lg text-body-lg text-on-primary/80">O objetivo é que você entenda o porquê das coisas. Quando a lógica faz sentido, a regra deixa de ser um peso.</p>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row items-center gap-lg bg-on-primary/5 p-lg rounded-3xl border border-on-primary/10 hover:bg-on-primary/10 transition-colors scroll-reveal">
+                    <div class="flex-shrink-0 w-20 h-20 bg-primary-container rounded-2xl flex items-center justify-center shadow-md">
+                        <span class="material-symbols-outlined text-4xl">monitoring</span>
+                    </div>
+                    <div>
+                        <h4 class="font-headline-sm text-headline-sm mb-2">Acompanhamento de verdade</h4>
+                        <p class="font-body-lg text-body-lg text-on-primary/80">Não é só dar aula e ir embora. O progresso do aluno é acompanhado de perto, com material adaptado e atenção à evolução.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modalidades Section -->
+    <section class="py-xl px-md bg-white border-b border-outline-variant/30">
+        <div class="max-w-container-max mx-auto">
+            <h2 class="font-headline-md text-headline-md text-center mb-xl scroll-reveal">Como as aulas acontecem</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+                <div class="relative overflow-hidden group rounded-3xl p-lg bg-surface-container border border-outline-variant hover:border-secondary transition-all hover-lift scroll-reveal">
+                    <div class="relative z-10">
+                        <span class="material-symbols-outlined text-secondary text-5xl mb-4 inline-block group-hover:translate-y-[-2px] transition-transform">location_on</span>
+                        <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">📍 Presencial</h3>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant">Em Parnaíba, Piauí. Atendimento individual ou em pequenos grupos no conforto da sua casa.</p>
+                    </div>
+                    <div class="absolute -bottom-10 -right-10 opacity-5 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500">
+                        <span class="material-symbols-outlined text-[150px]">apartment</span>
+                    </div>
+                </div>
+                
+                <div class="relative overflow-hidden group rounded-3xl p-lg bg-surface-container border border-outline-variant hover:border-primary transition-all hover-lift scroll-reveal" style="transition-delay: 100ms;">
+                    <div class="relative z-10">
+                        <span class="material-symbols-outlined text-primary text-5xl mb-4 inline-block group-hover:translate-y-[-2px] transition-transform">computer</span>
+                        <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">💻 Online</h3>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant">Pelo Google Meet, de qualquer lugar do Brasil. Mesma qualidade, mesmo acompanhamento e materiais digitais exclusivos.</p>
+                    </div>
+                    <div class="absolute -bottom-10 -right-10 opacity-5 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500">
+                        <span class="material-symbols-outlined text-[150px]">public</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-xl px-md bg-surface-bright relative overflow-hidden">
+        <div class="max-w-container-max mx-auto text-center space-y-md scroll-reveal">
+            <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface">Pronto para transformar sua relação com o Português?</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                O primeiro passo é simples: manda uma mensagem e a gente conversa sobre o que você precisa. Sem compromisso.
+            </p>
+            <div class="flex flex-col items-center gap-md pt-lg">
+                <a id="footer-cta-btn" class="inline-flex items-center gap-2 bg-secondary text-on-secondary px-12 py-5 rounded-full font-headline-sm text-headline-sm hover-lift cta-float shadow-xl" href="https://wa.me/5586995390749" target="_blank">
+                    👉 Chamar no WhatsApp agora
+                </a>
+                <a id="instagram-link" class="flex items-center gap-2 text-on-surface-variant hover:text-primary hover:underline transition-colors py-2" href="https://instagram.com/lu_alves0308" target="_blank">
+                    <span class="material-symbols-outlined">alternate_email</span>
+                    <span class="font-label-md text-label-md">@lu_alves0308</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Background blob decoration -->
+        <div class="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-3xl pointer-events-none"></div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-on-surface text-surface py-xl px-md">
+    <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-lg border-b border-surface/10 pb-lg mb-lg">
+        <div class="space-y-4">
+            <div class="flex items-center gap-2">
+                <!-- Inverted logo for dark footer -->
+                <img alt="Logo Luciana Alves" class="h-12 w-auto invert brightness-0 filter" src="https://lh3.googleusercontent.com/aida/AP1WRLvTBpa3w8oTgfxsgsFpZEqzN8yghcbnPzScrIy6zs44lEwgBrmB7BSLX19KcZOm1OIvwJQavdhqbU2r3wNrk9XjB7_eBiXnvD93_f5t1dOOBlcKlk8QVSUfDuTRLH0SZAyHxIyaJrutCHG6Spp5NsgHylJyuV9I57aCMxwwBVlhOm-g9lf2UW0-aulpbvwhm_LO3sH-Adtmomo0zlbqczhzHiKq_VI0ijXJgEs94VF2Yx48ET_p2ovvnNlO"/>
+            </div>
+            <p class="font-body-md text-body-md text-surface/70">
+                Profa. Luciana Ripardo Alves — Língua Portuguesa
+            </p>
+        </div>
+        
+        <div class="space-y-4">
+            <h4 class="font-label-md text-label-md text-surface uppercase tracking-wider">Localização</h4>
+            <p class="font-body-md text-body-md text-surface/70">Parnaíba, PI | Atendimento Online para todo Brasil</p>
+            <div class="flex items-center gap-2 text-primary-fixed hover:text-primary-fixed-dim transition-colors">
+                <span class="material-symbols-outlined">call</span>
+                <a class="font-body-md text-body-md hover:underline" href="tel:+5586995390749">(86) 99539-0749</a>
+            </div>
+        </div>
+        
+        <div class="space-y-4">
+            <h4 class="font-label-md text-label-md text-surface uppercase tracking-wider">Filosofia</h4>
+            <p class="font-body-md text-body-md italic text-surface/70">
+                "L de Linguagem, R de Revolução — o saber é atitude."
+            </p>
+        </div>
+    </div>
+    
+    <div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-md opacity-50">
+        <p class="text-caption font-caption">© 2024 Profa. Língua Portuguesa. Todos os direitos reservados.</p>
+        <div class="flex gap-md">
+            <a class="text-caption font-caption hover:underline" href="#">Privacidade</a>
+            <a class="text-caption font-caption hover:underline" href="#">Termos de Uso</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // ----------------------------------------------------
+    // MOBILE NAVIGATION DRAWER
+    // ----------------------------------------------------
+    const menuToggleBtn = document.getElementById('menu-toggle-btn');
+    const menuCloseBtn = document.getElementById('menu-close-btn');
+    const mobileMenuDrawer = document.getElementById('mobile-menu-drawer');
+    const menuBackdrop = document.getElementById('menu-backdrop');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+    const mobileCtaBtn = document.getElementById('mobile-cta-btn');
+
+    function openMobileMenu() {
+        mobileMenuDrawer.classList.remove('translate-x-full');
+        mobileMenuDrawer.setAttribute('aria-hidden', 'false');
+        
+        // Soft backdrop fade-in
+        menuBackdrop.classList.remove('opacity-0');
+        menuBackdrop.classList.add('opacity-100');
+        
+        document.body.classList.add('overflow-hidden');
+    }
+
+    function closeMobileMenu() {
+        mobileMenuDrawer.classList.add('translate-x-full');
+        mobileMenuDrawer.setAttribute('aria-hidden', 'true');
+        
+        // Soft backdrop fade-out
+        menuBackdrop.classList.remove('opacity-100');
+        menuBackdrop.classList.add('opacity-0');
+        
+        document.body.classList.remove('overflow-hidden');
+    }
+
+    menuToggleBtn.addEventListener('click', openMobileMenu);
+    menuCloseBtn.addEventListener('click', closeMobileMenu);
+    menuBackdrop.addEventListener('click', closeMobileMenu);
+
+    // Close mobile menu when clicking nav links
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', closeMobileMenu);
+    });
+    mobileCtaBtn.addEventListener('click', closeMobileMenu);
+
+    // Close mobile menu on Escape key press
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !mobileMenuDrawer.classList.contains('translate-x-full')) {
+            closeMobileMenu();
+        }
+    });
+
+    // ----------------------------------------------------
+    // SCROLL-TRIGGERED FADE-IN ANIMATIONS
+    // ----------------------------------------------------
+    const revealElements = document.querySelectorAll('.scroll-reveal');
+    
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                // Once it is visible, stop observing to prevent repeat triggers on scroll
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1, // trigger when 10% of the element is visible
+        rootMargin: '0px 0px -40px 0px' // offset so it triggers slightly before coming into full view
+    });
+
+    revealElements.forEach(element => {
+        revealObserver.observe(element);
+    });
+
+    // Header shadows on scroll
+    const navbar = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 20) {
+            navbar.classList.add('bg-surface', 'shadow-md');
+            navbar.classList.remove('bg-surface/90');
+        } else {
+            navbar.classList.add('bg-surface/90');
+            navbar.classList.remove('shadow-md');
+        }
+    });
+</script>
+</body>
+</html>
